@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 64px;
+    background-color: rgb(23, 23, 80);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin-left: 20px;
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+}
+header .nav{
+    margin-right: 20px;
+}
+header .nav ul{
+    list-style: none;
+    display: flex;
+}
+header .nav a{
+    position: relative;            
+    display: inline-block;         
+    text-decoration: none;         
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: transform 220ms ease-in-out;
+    transform-origin: center;
+    will-change: transform;
+    margin-left: 48px;
+    font-size: larger;
+}
+header .nav a::before,
+header .nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;                     
+    background: white;        
+    transform: scaleX(0);
+    transform-origin: center;        
+    transition: transform 250ms cubic-bezier(.2,.8,.2,1);
+    pointer-events: none;         
+}
+header .nav a::before{
+    top: 0; 
+}   
+header .nav a::after{
+    bottom: 0; 
+} 
+header .nav a:hover,
+header .nav a:focus{
+    transform: scale(1.04);         
+    outline: none;                
+}
+header .nav a:hover::before,
+header .nav a:hover::after,
+header .nav a:focus::before,
+header .nav a:focus::after{
+    transform: scaleX(1);     
+}
+.amfang{
+    width: 100%;
+    height: 600px;
+    background-image: url('snow-mountain-9614087.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amfang .text-container{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(169, 169, 169, 0.5);
+    width: 55%;
+    padding: 100px;
+    border-radius: 12px 12px 0 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+}
+.amfang .text-container p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.amfang .text-container h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+.amfang .text-container button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 80);
+    color: white;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+.amfang .text-container button:hover{
+    background-color: rgb(45, 45, 120);
+}
+.container{
+    display: flex;
+}
+.container .item{
+    flex: 1;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.container .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+.container .item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.container .item button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 80);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+    position: relative;
+    top: 0;
+}
+.container .item button:hover{
+    background-color: rgb(45, 45, 120);
+    top: -2px;
+}   
+.apropos{
+    background-image: url('ama-dablam-2064522_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+.apropos .cov{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+}
+.apropos .cov .groß{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+.apropos .cov .texte-über-uns{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.apropos .cov button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 80);
+    color: white;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+.apropos .cov button:hover{
+    background-color: rgb(45, 45, 120);
+    top: -2px;
+}
+.kontakt{
+    padding: 60px;
+    text-align: center;
+    background-color:  rgba(45, 45, 120, 0.153);
+}
+.kontakt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+.kontakt form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kontakt form input,
+.kontakt form textarea{
+    width: 75%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.kontakt form button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 80);
+    color: white;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+.kontakt form button:hover{
+    background-color: rgb(45, 45, 120);
+    top: -2px;
+}
+footer{
+    width: 100%;
+    height: 240px;
+    background-color: rgb(23, 23, 80);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+footer .adresse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 12px;
+}
+footer .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 12px;
+}
+footer .menu p{
+    font-size: 24px;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    
+}
+footer .menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+footer .menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 200ms ease-in-out;
+}
+footer .menu a:hover{
+    color: rgb(169, 169, 169);
+}
+footer .sozial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-right: 12px;
+}
+footer .sozial i{
+    font-size: 32px;
+    color: white;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+}
+footer .sozial i:hover{
+    color: rgb(169, 169, 169);
+}
+footer .sozial a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 200ms ease-in-out;
+}
+footer .sozial a:hover{
+    color: rgb(169, 169, 169);
+}

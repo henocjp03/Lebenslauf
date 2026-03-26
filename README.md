@@ -1,2 +1,2 @@
-# Lebenslauf
-Mein Klein Lebenslauf
+# Lebenslauf (portfolio)
+Portfolio
