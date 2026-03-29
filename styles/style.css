@@ -36,7 +36,7 @@ header {
 
 .kontakt {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -77,16 +77,16 @@ main {
 }
 
 .ort-datum-zeugnis, .ort-arbiet {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .ort-datum {
-    font-weight: bold;
     color: #2c3e50;
     margin-bottom: 5px;
 }
 
 .zeugnis, .arbeit, .schwerpunkt {
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -206,6 +206,8 @@ footer .copyright {
     
     .kontakt {
         font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
     }
     
     .projekten {
@@ -242,6 +244,8 @@ footer .copyright {
     }
     
     .kontakt {
+        display: flex;
+        flex-direction: column;
         font-size: 0.8rem;
     }
     
